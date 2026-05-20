@@ -13,24 +13,26 @@ let nomeProduto;
 let preco;
 
 switch (produto) {
-    case "baunilha":
+    case "casquinha de baunilha":
         preco = 8;
         break;
-    case "chocolate":
+    case "casquinha de chocolate":
         preco = 8;
         break;
-    case "pistache":
+    case "casquinha de pistache":
         preco = 8;
         break;
-    case "frutas vermelhas":
+    case "milkshake de frutas vermelhas":
         preco = 17;
         break;
-    case "leite ninho":
+    case "milkshake de leite ninho":
         preco = 17;
         break;
-    case "ovomaltine":
+    case "milkshake de ovomaltine":
         preco = 17;
         break;
+    default:
+        alert("Produto inválido.");
 }
 
 let total = preco * quantidade;
