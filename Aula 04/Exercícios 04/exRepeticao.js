@@ -40,6 +40,7 @@ for(let i = inicioPar; i <= 50; i++) {
 }
 
 // 2. Jogo de adivinhação
+
 const numeroSecreto = Math.floor(Math.random() * 100 ) + 1;
 
 let tentativas = 0;
@@ -62,3 +63,74 @@ while(acertou == false) {
         alert(`Errou! O número secreto é MENOR que ${palpite}. Tente novamente`);
     }
 }
+
+
+// EXEMPLOS DA PROFESSORA 
+
+function mensagem() {
+}
+
+// random gera numeros aleatorios entre 0 e 1.
+// nath.floor: remove os números decimais e deixa os numeros inteiros.
+const numeroSecreto2 = Math.floor(Math.random() * 100 ) + 1;
+let tentativas2;
+
+while(tentativas2 !== numeroSecreto2) {
+    tentativa2 = Number(prompt("Digite um número de 1 à 100: "));
+}
+
+    if(tentativas2 > numeroSecreto2) {
+        console.log("O número é menor!");
+    }
+    else if(tentativas2 < numeroSecreto2) {
+    console.log("O número é maior!")
+}
+    else {
+        console.log("Parabens! Você acertou!");
+    }
+
+// Intermediário 3
+let numero = Number(prompt("Digite um número: "));
+
+while(numero = 0) {
+    console.log(numero);
+    numero--; // numero = numero - 1
+}
+
+// Intermediario 4
+let senha = "1234"
+let senhaDigitada = "";
+
+while(senhaDigitada !== senha) {
+    senhaDigitada = prompt("Digite a senha: ");
+
+    if(senhaDigitada !== senha) {
+        alert("Senha incorreta! Tente novamente.")
+    }
+}
+
+alert("Senha correta! Acesso permitido.");
+
+// Intermediário 5
+let soma2 = 0;
+
+let valor = Number(prompt("Digite um número ou 0 para parar: "));
+
+while(valor !== 0) {
+    soma2 += valor; // soma = soma + valor
+    valor = Number(prompt("Digite um número ou 0 para parar: "));
+    console.log(`Você digitou: ${valor}`);
+}
+
+console.log(`Total da soma: ${soma2}`);
+
+// Intermediário 6
+let somaValores = 0;
+
+for(let i = 1; i <= 3; i++) {
+    let valor2 = Number(prompt(`Digite o ${i}º número`));
+    somaValores += valor2; // somaValores = somaValores + valor2
+}
+
+let media = somaValores / 3;
+console.log(`A média é: ${media}`);
