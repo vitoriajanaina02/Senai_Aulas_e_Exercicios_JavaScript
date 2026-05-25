@@ -1,0 +1,29 @@
+/* Usando tag para estilizar */
+/* div {
+    background-color: rebeccapurple;
+} */
+
+/* Usando id para estilizar */
+/* #caixa {
+    background-color: blue;
+} */
+
+/* Usando classe para estilizar */
+/* .novoTitulo {
+    color: brown;
+} */
+
+#caixa {
+    /* background-color: brown; cor de fundo do elemento */
+    width: 300px; /* largura do elemento (em pixels) */
+    margin: 300px auto; /* margem do lado de fora do elemento -> 300px (em cima e embaixo) e auto nas laterais (centraliza) */
+    padding: 20px; /* espaço por dentro do elemento */
+    text-align: center; /* texto alinhado ao centro */
+    border: 1px solid #CCCCCC; /* borda do elemento */
+    border-radius: 10px; /* arredondamento de cantos da caixinha */
+}
+
+button {
+    padding: 10px 15px; /* espaço de 10px em cima e embaixo e 15px nas laterais do botão */
+    cursor: pointer; /* transforma o cursor (que no momento é uma setinha) em mãozinha */
+}
