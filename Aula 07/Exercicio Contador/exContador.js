@@ -14,3 +14,4 @@ botaoReiniciar.addEventListener("click", () => {
     contador = 0
     meucontador.innerText = contador;
 });
+
