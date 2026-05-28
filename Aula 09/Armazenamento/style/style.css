@@ -36,3 +36,24 @@ body {
 #titulo {
     text-align: center; /* alinha o texto ao centro */
 }
+
+.botao-remover {
+    border: none;
+    background-color: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none; /* remove o estilo de lista (por padrão é a bolinha) */
+    background-color: #eeeeee;
+    padding: 3px;
+    border-radius: 10px;
+    margin-bottom: 10px; /* margem na base do elemento */
+    display: flex;
+    justify-content: space-between; /* coloca espaço entre os elementos */
+    align-items: center;
+}
+
+#lista-tarefas {
+    padding: 0;
+}
