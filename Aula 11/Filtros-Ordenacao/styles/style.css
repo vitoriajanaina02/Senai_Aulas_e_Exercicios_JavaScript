@@ -1,0 +1,76 @@
+body {
+    background-color: #f4f6f8;
+    max-width: 1000px;
+    margin: 0 auto; /* essa margem centraliza os elementos */
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+.filtros {
+    display: flex;
+    gap: 20px; /* só funciona com o flex ativado e dá espaço no meio dos elementos */
+    margin-bottom: 25px;
+}
+
+ input, select {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px; /* tamano da fonte (do texto do input e do select */
+ }
+
+ input {
+    flex: 1; /* diz para o elemento crescer e ocupar todo o espaço livre disponível */
+    min-width: 250px;
+ }
+
+ .card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.lista-produtos {
+    display: grid;
+    /* grid-template-columns: define quantas colunas vai ter */
+    /* repeat -> repete um padrão de colunas */
+    /* auto-fit -> cria o máximo de colunas que couberem no espaço da tela */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card h2 {
+    font-size: 18px;
+    color: #222222;
+}
+
+.card p {
+    color: #666666;
+}
+
+.preco {
+    color: #0A7A2F;
+    font-weight: bold; /* peso da fonte (negrito)*/
+    font-size: 18px;
+}
+
+.mensagem {
+    /* controla em quais colunas o elemento vai ficar */
+    /* 1 -> começa na primeira linha da coluna */
+    /* -1 -> vai até a última linha da coluna */
+    /* vai até o final, não importa quantas colunas existam */
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #888888;
+    font-size: 18px;
+}
