@@ -44,7 +44,7 @@ function limparCampos() {
 function buscarRegistro() {
     const codigo = campoCodigo.value.replace(/\D/g, "").trim();
 
-    if(codigo.lenght !== 8) {
+    if(codigo.length !== 8) {
         alert("Código inválido!");
         limparCampos();
         return;
@@ -58,7 +58,7 @@ function buscarRegistro() {
         return;
     }
 
-    preencherCampos();
+    preencherCampos(registro);
 }
 
 botaoBuscar.addEventListener("click", buscarRegistro);
